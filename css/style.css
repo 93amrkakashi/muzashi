@@ -610,24 +610,29 @@ body {
   padding: 35px;
 }
 
-.steps .web, .steps .pro, .steps .add, .steps .geniral{
+.steps .web,
+.steps .pro,
+.steps .add,
+.steps .geniral {
   border: var(--border);
   box-shadow: var(--shadow);
   border-radius: 10px;
-  background-color: var(--main-color); 
+  background-color: var(--main-color);
   padding: 30px;
 }
-.steps div ul li{
+
+.steps div ul li {
   position: relative;
 }
-.steps div ul li::before{
+
+.steps div ul li::before {
   content: "➔";
-    position: absolute;
-    width: 5px;
-    height: calc(100% - 18px);
-    left: -20px;
-    top: 2px;
-    z-index: 0;
+  position: absolute;
+  width: 5px;
+  height: calc(100% - 18px);
+  left: -20px;
+  top: 2px;
+  z-index: 0;
 }
 
 .steps .add,
@@ -689,10 +694,12 @@ height: 100%;
 
 /* From uiverse.io by @mobinkakei */
 .wrapper {
-  width: 200px;
-  height: 60px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
 }
 
 .circle {
@@ -740,7 +747,7 @@ height: 100%;
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
