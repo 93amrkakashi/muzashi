@@ -319,13 +319,32 @@
 
   <!-- ------ footer section --------- -->
   <footer>
-
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-square-whatsapp"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-square-google-plus"></i>
   </footer>
   <!-- ------ end of footer section --------- -->
-
+  <div class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+</div>
 
   <!-- ------ link java script file --------- -->
   <script src="app.js"></script>
+  <script>
+    const loader = document.querySelector(".wrapper");
+    function load() {
+      loader.style.display = "none";
+    }
+    window.addEventListener("load", load );
+  </script>
 </body>
 
 </html>
