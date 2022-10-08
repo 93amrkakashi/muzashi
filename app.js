@@ -4,16 +4,21 @@ let switchs = document.querySelector(".menu");
 let link = document.querySelector(".links");
 let navBar = document.getElementById("nav");
 
-
-console.log(switchs)
-function switching(){
-    link.classList.toggle("mobile");
-    // link.classList.toggle("glass");
-
+// loader on page loads
+const loader = document.querySelector(".loader");
+function load() {
+    loader.style.display = "none";
 }
-switchs.addEventListener("click",switching);
+window.addEventListener("load", load);
 
+// toggle to mobile preview
+console.log(switchs)
+function switching() {
+    link.classList.toggle("mobile");
+}
+switchs.addEventListener("click", switching);
 
+// change width of skills
 
 window.onscroll = function () {
     if (window.scrollY >= section.offsetTop - 300) {
